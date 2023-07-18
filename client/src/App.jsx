@@ -23,7 +23,7 @@ function App() {
           to="/create-post"
           className="font-inter font-bold bg-[#5faece] text-gray-900 px-4 py-2 rounded-md"
         >
-          Create your own art
+          Create
         </Link>
       </header>
       <main className="sm:p-8 px-4 py-8 w-full bg-[#3d4952] min-h-[calc(100vh - 73px)]">
@@ -120,7 +120,7 @@ function App() {
           Made with 💗 by
           <a
             className="ml-2 text-neutral-800 dark:text-neutral-400 hover:text-[#5faece]"
-            href="https://tailwind-elements.com/"
+            href="/"
           >
             Brandon Shortridge
           </a>

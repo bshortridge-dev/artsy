@@ -1,6 +1,9 @@
 import express from "express";
 import * as dotenv from "dotenv";
 import { v2 as cloudinary } from "cloudinary";
+import Post from "../mongoDB/models/post.js";
+
+/*
 import mongoose from "mongoose";
 
 const Post = new mongoose.Schema({
@@ -10,6 +13,8 @@ const Post = new mongoose.Schema({
 });
 
 const PostSchema = mongoose.model("Post", Post);
+*/
+
 dotenv.config();
 
 const router = express.Router();

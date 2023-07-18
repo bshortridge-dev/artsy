@@ -1,9 +1,15 @@
 import express from "express";
 import * as dotenv from "dotenv";
 import { v2 as cloudinary } from "cloudinary";
+import mongoose from "mongoose";
 
-import Post from "../mongodb/models/post.js";
+const Post = new mongoose.Schema({
+  name: { type: String, required: true },
+  prompt: { type: String, required: true },
+  photo: { type: String, required: true },
+});
 
+const PostSchema = mongoose.model("Post", Post);
 dotenv.config();
 
 const router = express.Router();

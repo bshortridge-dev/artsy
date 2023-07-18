@@ -1,15 +1,7 @@
 import express from "express";
 import * as dotenv from "dotenv";
 import { Configuration, OpenAIApi } from "openai";
-import mongoose from "mongoose";
 
-const Post = new mongoose.Schema({
-  name: { type: String, required: true },
-  prompt: { type: String, required: true },
-  photo: { type: String, required: true },
-});
-
-const PostSchema = mongoose.model("Post", Post);
 dotenv.config();
 
 const router = express.Router();
